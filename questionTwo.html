@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Question 2 Coding
+    </title>
+</head>
+
+<body>
+    
+    <input type="text" id="userInput" placeholder="Enter a number">
+    <button onclick="checkInput()">Check</button>
+
+    <script>
+        function checkInput() {
+            var number = document.getElementById("userInput").value;
+            if(number < 10){
+                alert("The number is lower than 10.");
+            }
+            else if(number > 10){
+                alert("The number is higher than 10.");
+            }
+            else if (number == 10){
+                alert("The number is exactly 10.");
+            }
+            else{
+                alert("Please insert a number!");
+            }
+        }
+    </script>
+</body>
+
+</html>
